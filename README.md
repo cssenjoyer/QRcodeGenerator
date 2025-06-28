@@ -1,100 +1,78 @@
-QR Code Generator - Stylish QR Code Generation Application
+QR Code Generator
 
+A desktop application for generating QR codes with a modern interface, built with Python and PyQt5.
+Features
 
-**Description**
+    Clean, responsive user interface
 
-This modern application allows you to generate QR codes from text or URLs with a sleek cyberpunk/neon interface. Key features:
-
-    Stylish cyberpunk/neon design
-
-    Glitch effects and animations
+    Generate QR codes from text input or URLs
 
     Save QR codes as PNG images
 
-    Fully offline operation (no internet required)
+    Customizable QR code colors
 
-Features
+    Cross-platform support (Windows, Linux, macOS)
 
-    Generate QR codes from any text or URLs
-
-    Automatic QR code scaling
-
-    Save as PNG with transparent background
-
-    Hover effects on buttons
-
-    Animated background
-
-Installation
 Requirements
 
-    Python 3.7+
+    Python 3.7 or higher
 
     PyQt5
 
     qrcode library
 
-Install dependencies
+Installation
+
+    Clone the repository:
+
+bash
+
+git clone https://github.com/yourusername/qr-code-generator.git
+cd qr-code-generator
+
+    Install dependencies:
+
 bash
 
 pip install PyQt5 qrcode
 
-Run the application
+Usage
+
+Run the application:
 bash
 
 python qrcodegenerator.py
 
-Building EXE (for distribution)
-
-    Install PyInstaller:
-
-bash
-
-pip install pyinstaller
-
-    Build the executable:
-
-bash
-
-pyinstaller --onefile --windowed --icon=icon.ico qrcodegenerator.py
-
-    The compiled EXE will be in the dist/ folder
-
-Usage
+How to Use:
 
     Enter text or URL in the input field
 
-    Click "GENERATE"
+    Click "Generate" to create the QR code
 
-    Click "SAVE" to export as PNG file
+    Click "Save" to export as PNG file
+
+Project Structure
+
+    qrcodegenerator.py - Main application code
+
+    requirements.txt - List of dependencies
+
+    assets/ - Resource files (icons, stylesheets)
 
 Technical Details
-Technologies Used
 
-    Python 3
+The application uses:
 
-    PyQt5 for GUI
+    PyQt5 for the graphical interface
 
-    qrcode library for QR generation
+    qrcode library for QR code generation
 
-    Animation effects using QPropertyAnimation
+    Custom widget styling with CSS
 
-Code Structure
-
-    GlitchEffect - Class for glitch-effect text
-
-    ModernButton - Styled animated buttons
-
-    QRGenerator - Main application class
-
-        initUI - Interface initialization
-
-        generate_qr - QR code generation
-
-        save_qr - Save QR code to file
+    Animation effects for improved UX
 
 License
 
-This project is licensed under the MIT License. You are free to use, modify and distribute the code.
+MIT License. See LICENSE file for details.
 
-For questions and suggestions, please contact the project author.
+Project repository: https://github.com/yourusername/qr-code-generator
